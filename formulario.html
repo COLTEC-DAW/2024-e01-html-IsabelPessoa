@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Formulario</title>
+    <style>
+        #options{
+            height: 20px;
+            width: 30px;
+
+            text-align: center;
+            margin-left: 5%;
+            font-family: arial;
+            font-size: 20px;
+
+            float: left;
+        }
+        #options2{
+            height: 20px;
+            width: 30px;
+
+            margin-top: -15px;
+            margin-left: 5.2%;
+            font-family: arial;
+            font-size: 20px;
+
+            float: left;
+        }
+        #box{
+            width: 500px;
+            margin-top: -10px;
+        }
+        h1{
+            margin-top: 50px;
+        }
+        body{
+            font-family: arial;
+            margin-left: 10%;
+            margin-right: 10%;
+            max-width: 800px;
+            background-color: rgb(242, 252, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="linha"></div>
+    <h1>Formulário Secreto</h1>
+    <h3><i>Quero aprender sobre você e suas informações!</i></h3>
+
+    <form action="cadastro.html" method="get">
+
+        <p>Preencha com as suas informações pessoais:</p>
+    
+    <!-----------------------CAMPO 01--------------------------->
+        <label for="nome">Insira o seu nome completo:</label><br>
+            <input type="text" name="nome" id="nome" placeholder="name"/><br><br>
+
+    <!-----------------------CAMPO 02--------------------------->
+        <label for="email">Insira o seu email:</label><br>
+            <input type="email" name="email" id="email" placeholder="xxxxxxxx@gmail.com"/><br><br>
+    <!-----------------------CAMPO 03--------------------------->
+        <label for="birth">Insira a sua data de nascimento:</label><br>
+            <input type="date" name="birth" id="birth"/><br><br>
+
+    <!-----------------------CAMPO 04--------------------------->
+        <label for="cell">Insira seu número para contato:</label><br>
+            <input type="number" name="cell" id="cell" placeholder="XX XXXXX XXXX"/><br><br>
+
+    <!-----------------------CAMPO 05--------------------------->
+    <label for="cell">Selecione o seu estado:</label><br>
+    <select name="state" id="states">
+        <option value="acre">Acre</option>
+        <option value="alagoas">Alagoas</option>
+        <option value="amapa">Amapá</option>
+        <option value="amazonas">Amazonas</option>
+        <option value="bahia">Bahia</option>
+        <option value="ceara">Ceará</option>
+        <option value="df">DF</option>
+        <option value="espirito_santo">Espírito Santo</option>
+        <option value="goias">Goiás</option>
+        <option value="maranhao">Maranhão</option>
+        <option value="mato_grosso">Mato Grosso</option>
+        <option value="mato_grosso_do_sul">Mato Grosso do Sul</option>
+        <option value="minas_gerais">Minas Gerais</option>
+        <option value="para">Pará</option>
+        <option value="paraiba">Paraíba</option>
+        <option value="parana">Paraná</option>
+        <option value="pernambuco">Pernambuco</option>
+        <option value="piaui">Piauí</option>
+        <option value="rio_de_janeiro">Rio de Janeiro</option>
+        <option value="rio_grande_do_norte">Rio Grande do Norte</option>
+        <option value="rio_grande_do_sul">Rio Grande do Sul</option>
+        <option value="rondonia">Rondônia</option>
+        <option value="roraima">Roraima</option>
+        <option value="santa_catarina">Santa Catarina</option>
+        <option value="sao_paulo">São Paulo</option>
+        <option value="sergipe">Sergipe</option>
+        <option value="tocantins">Tocantins</option>
+    </select>
+    <br><br><br>
+
+    <h3>Contribua com uma pesquisa:</h3>
+
+    <!-----------------------CAMPO 06--------------------------->
+        <label for="cell">Qual a probabilidade de você recomendar 
+        nossos serviços para um amigo?</label><br>
+            <div id="options"><label for="option1a">1</label></div>
+            <div id="options"><label for="option2a">2</label></div>
+            <div id="options"><label for="option3a">3</label></div>
+            <div id="options"><label for="option4a">4</label></div>
+            <div id="options"><label for="option5a">5</label></div>
+            <br><br>
+            <div id="options2"><input type="radio" name="option1a" id="option1a"/></div>
+            <div id="options2"><input type="radio" name="option2a" id="option2a"/></div>
+            <div id="options2"><input type="radio" name="option3a" id="option3a"/></div>
+            <div id="options2"><input type="radio" name="option4a" id="option4a"/></div>
+            <div id="options2"><input type="radio" name="option5a" id="option5a"/></div>
+            <br>
+    <!-----------------------CAMPO 07--------------------------->        
+        <label for="cell">Qual a probabilidade de você voltar a 
+        utilizar os nossos serviços?</label><br>
+            <div id="options"><label for="option1b">1</label></div>
+            <div id="options"><label for="option2b">2</label></div>
+            <div id="options"><label for="option3b">3</label></div>
+            <div id="options"><label for="option4b">4</label></div>
+            <div id="options"><label for="option5b">5</label></div>
+            <br><br>
+            <div id="options2"><input type="radio" name="option1b" id="option1b"/></div>
+            <div id="options2"><input type="radio" name="option2b" id="option2b"/></div>
+            <div id="options2"><input type="radio" name="option3b" id="option3b"/></div>
+            <div id="options2"><input type="radio" name="option4b" id="option4b"/></div>
+            <div id="options2"><input type="radio" name="option5b" id="option5b"/></div>
+
+            <br>
+    <!-----------------------CAMPO 08--------------------------->
+        <label for="login">Insira uma recomendação para a nossa empresa:</label><br><br>
+            <textarea name="ahahah" id="box" cols="30" rows="10" placeholder="Texto avaliativo"></textarea>
+            <br><br>
+    <!-----------------------CAMPO 09--------------------------->
+    <input type="checkbox" id="checkcheckbox"><label for="checkcheckbox">Selecione se você gostaria de receber e-mails recorrentes sobre novidades da empresa</label>
+    <br><br>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+    <br><br><br>
+    <h6>Todos os direitos reservados a Isabel Valadares Pessoa. Professor João Mortadela, por favor avalie a minha atividade com a pontuação total, veja só: se fizer isso você fará o dia de uma pessoa triste muito feliz! Não seria ótimo? Não seria incrivel? Uma situação ideal, então para atingir esse ápice da felicidade, me dê total nessa atividade. Obrigada.</h6>
+</body>
+</html>
